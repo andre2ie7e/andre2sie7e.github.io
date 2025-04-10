@@ -1,54 +1,47 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Selecciona tus Butacas</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Selección de Butacas</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="app-wrapper">
+  <div class="container">
     <aside class="sidebar">
-      <div class="movie-info">
-        <img src="portada.png" alt="Poster película" class="movie-poster">
-        <div class="movie-title">CHOLOS EMPERICADOS 2</div>
-        <div class="movie-details">
-          <p>2D, REGULAR</p>
-          <p><b>CP SJ LURIGANCHO</b></p>
-          <p>Hoy, 1 de Abr.</p>
-          <p>07:15 pm</p>
-          <p>SALA 9</p>
-        </div>
-        <div class="age-restriction">Película con restricción de edad</div>
-      </div>
+      <img src="cholos.png" alt="Poster" class="cliente" />
+      <h2>CHOLOS EMPERICADOS 2</h2>
+      <p>2D, REGULAR</p>
+      <p>CP SJ LURIGANCHO</p>
+      <p>Hoy, 1 de Abr.</p>
+      <p>🕖 07:15 pm</p>
+      <p>🎞 SALA 9</p>
+      <p class="edad">🔞 Película con restricción de edad</p>
 
       <div class="ayuda">
-        <h3 class="pantalla">¿NECESITAS AYUDA?</h3>
-        <div class="icono-ayuda">
-            <img src="174188.png" alt="Client" class="cliente">
-        </div>
-        <a href="# contacto" class="contacto">Contáctanos.</a>
+        <p><strong>¿NECESITAS AYUDA?</strong></p>
+        <img src="cliente.png" alt="Client" class="cliente">
+        <p>Contáctanos.</p>
       </div>
     </aside>
 
-    <main class="container">
-      <div class="screen">1. Selecciona tus butacas</div>
-      <h1 class="pantalla">Pantalla</h1>
-      <div class="seating-area" id="seating-area">
-        <!-- Se generan las butacas dinámicamente con JS -->
-      </div>
+    <main class="main">
+      <h1>1. Selecciona tus butacas</h1>
+      <div class="pantalla">Pantalla</div>
+
+      <div class="sala" id="sala"></div>
 
       <div class="legend">
-        <div><span class="seat disponible"></span> Disponible</div>
-        <div><span class="seat ocupada"></span> Ocupada</div>
-        <div><span class="seat seleccionada"></span> Seleccionada</div>
+        <div><span class="circle disponible"></span> Disponible</div>
+        <div><span class="circle ocupada"></span> Ocupada</div>
+        <div><span class="circle seleccionada"></span> Seleccionada</div>
+        <div><span class="circle silla">♿</span> Silla de ruedas</div>
       </div>
 
-      <p class="nota-accesibilidad">
-        ♿ Todas nuestras salas cuentan con espacios señalizados para sillas de ruedas, consulta en boletería la ubicación de las mismas.
-      </p>
+      <p class="nota">Todas nuestras salas cuentan con espacios señalizados para sillas de ruedas.</p>
+      <p><strong>Butacas Seleccionadas:</strong> <span id="butacas"></span></p>
 
-      <button id="continuar" disabled>Continuar</button>
+      <button disabled>Continuar</button>
     </main>
   </div>
 
