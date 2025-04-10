@@ -8,12 +8,62 @@
     
     <title>Cineplanet</title>
     <h1>Informe del proyecto AA2</h1>
-    <p>Maquetado de Cineplanet Evidencia AA2</p>
-    <p>En la página web de Cineplanet algunos usuarios nos cuentan su mala
-        experiencia al momento de comprar las entradas para una función, 
-        al seleccionar las últimas 5 butacas disponibles no les permite ver el precio
-        de las entradas y este problema ya se ha repetido en reiteradas ocasiones.</p>
-</head>
+    <p>Seleccione las butacas</p>
+
+<div class="app-wrapper">
+    <aside class="sidebar">
+      <div class="movie-info">
+        <img src="portada.png" alt="Poster película" class="movie-poster">
+        <div class="movie-title">CHOLOS EMPERICADOS 2</div>
+        <div class="movie-details">
+          <p>2D, REGULAR</p>
+          <p><b>CP SJ LURIGANCHO</b></p>
+          <p>Hoy, 1 de Abr.</p>
+          <p>07:15 pm</p>
+          <p>SALA 9</p>
+        </div>
+        <div class="age-restriction">Película con restricción de edad</div>
+      </div>
+
+      <div class="ayuda">
+        <h3 class="pantalla">¿NECESITAS AYUDA?</h3>
+        <div class="icono-ayuda">
+            <img src="174188.png" alt="Client" class="cliente">
+        </div>
+        <a href="# contacto" class="contacto">Contáctanos.</a>
+      </div>
+    </aside>
+
+    <main class="container">
+      <div class="screen">1. Selecciona tus butacas</div>
+      <h1 class="pantalla">Pantalla</h1>
+      <div class="seating-area" id="seating-area">
+        <!-- Se generan las butacas dinámicamente con JS -->
+      </div>
+
+      <div class="legend">
+        <div><span class="seat disponible"></span> Disponible</div>
+        <div><span class="seat ocupada"></span> Ocupada</div>
+        <div><span class="seat seleccionada"></span> Seleccionada</div>
+      </div>
+
+      <p class="nota-accesibilidad">
+        ♿ Todas nuestras salas cuentan con espacios señalizados para sillas de ruedas, consulta en boletería la ubicación de las mismas.
+      </p>
+
+      <button id="continuar" disabled>Continuar</button>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+
+
+
+
+
+
+
+    
 <body>
     
 </body>
